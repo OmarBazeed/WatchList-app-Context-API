@@ -18,7 +18,7 @@ const Search = () => {
     // .catch(err=>console.log(err))
 
   await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=ee33a82bf827459de426108c06723f41&language=en-US&query=${SearchItem}&page=1&include_adult=false`)
-    .then(res=>{setMovies(res.data.results);console.log(res.data.results)})
+    .then(res=>{setMovies(res.data.results)})
     
   }
 
